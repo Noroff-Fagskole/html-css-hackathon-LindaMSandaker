@@ -1,3 +1,72 @@
+@font-face {
+  font-family: "Exo_2";
+  src: url("../fonts/Exo_2,Open_Sans/Exo_2/static/Exo2-BoldItalic.ttf")
+      format("ttf"),
+    url("../fonts/Exo_2,Open_Sans/Exo_2/static/Exo2-ExtraLightItalic.ttf")
+      format("ttf");
+}
 body {
-    background-color: #eee;
+  background-color: #eee;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #444;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.app-header {
+  border-bottom: 1px solid #999;
+  padding-bottom: 1em;
+}
+
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.app-logo {
+  display: inline-block;
+}
+
+.app-logo img {
+  width: 160px;
+}
+
+.app-navigation {
+  float: right;
+}
+
+.app-navigation a:link {
+  text-decoration: none;
+  color: #444;
+  padding: 0.5em;
+}
+
+.app-navigation a:visited {
+  color: #444;
+}
+
+.app-navigation a:active {
+  color: blueviolet;
+}
+
+.app-navigation a:hover {
+  color: cadetblue;
+}
+
+/* links have 4 states... 
+a:link, a:visited, a:active, a:hover 
+*/
+/* this is a comment field for the coders, 
+will not be visible on the web 
+*/
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-family: "Exo_2";
+  font-weight: 700;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
