@@ -5,6 +5,7 @@
     url("../fonts/Exo_2,Open_Sans/Exo_2/static/Exo2-ExtraLightItalic.ttf")
       format("ttf");
 }
+
 body {
   background-color: #eee;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -12,6 +13,20 @@ body {
   color: #444;
   font-weight: normal;
   line-height: 1.5;
+}
+
+/*
+Mobile: 320px 
+Tablet: 767 px 
+Desktop: 1024px
+*/
+
+main img {
+  width: 100%;
+  max-width: 620px;
+
+  margin: 0 auto 0 auto;
+  display: block;
 }
 
 .app-header {
@@ -23,6 +38,7 @@ body {
   max-width: 1080px;
   margin: 0 auto;
 }
+
 .app-logo {
   display: inline-block;
 }
@@ -53,6 +69,11 @@ body {
   color: cadetblue;
 }
 
+.nav-icon {
+  color: #444;
+  padding: 0.5em;
+}
+
 /* links have 4 states... 
 a:link, a:visited, a:active, a:hover 
 */
@@ -69,4 +90,73 @@ h1 {
 
 p {
   font-family: "Open Sans", sans-serif;
+}
+
+.color-red {
+  color: red;
+}
+
+form {
+  background-color: transparent;
+}
+
+form fieldset {
+  border: 2px dashed darkblue;
+  padding: 0.5em 0 1em 1em;
+  background-color: aliceblue;
+}
+
+form fieldset legend {
+  font-style: italic;
+  font-size: 2em;
+}
+
+form label {
+  display: block;
+}
+
+form h5 {
+  margin-bottom: 5px;
+}
+.input-text {
+  width: 60%;
+  border: 1px solid #444;
+  padding: 0.5em;
+  color: #666;
+  border-radius: 6px;
+}
+
+.input-text-area {
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  background-color: peachpuff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+input[type="submit"]:hover {
+  background-color: greenyellow;
+}
+
+/*
+textarea {
+  border-radius: 6px;
+}
+input[type="text"] {
+  border: 3px solid red;
+}
+input[type="email"] {
+  border: 3px solid green;
+}
+input[type="tel"] {
+  border: 3px solid blue;
+}
+*/
+
+.footer-icon {
+  padding: 0.5em;
 }
