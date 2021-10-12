@@ -34,17 +34,32 @@
         </a>
 
         <nav class="app-navigation">
-          <a href="/"><i class="fas fa-home nav-icon"></i>Home</a>
+          <label for="hamburger-menu">
+            <span class="sr-only">Hamburger Menu</span>
+            <i class="fa fa-bars"></i>
+          </label>
+          <input type="checkbox" name="" id="hamburger-menu" />
 
-          <a href="./about.html"
-            ><i class="fas fa-info-circle nav-icon"></i>About</a
-          >
-          <a href="./contact.html"
-            ><i class="fas fa-phone nav-icon"></i>Contact</a
-          >
-          <a href="./signup.html"
-            ><i class="fas fa-sign-in-alt nav-icon"></i>Signup</a
-          >
+          <ul class="app-navigation-drawer">
+            <li>
+              <a href="/"><i class="fas fa-home nav-icon"></i>Home</a>
+            </li>
+            <li>
+              <a href="./about.html"
+                ><i class="fas fa-info-circle nav-icon"></i>About</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html"
+                ><i class="fas fa-phone nav-icon"></i>Contact</a
+              >
+            </li>
+            <li>
+              <a href="./signup.html"
+                ><i class="fas fa-sign-in-alt nav-icon"></i>Signup</a
+              >
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -156,6 +171,20 @@
               styles we wrote in our sheet get loaded onto the web page.
             </p>
             <p>A webpage without CSS is pretty barebones:</p>
+            <pre
+              rel="HTML"
+              class="language-html"
+            ><code class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token comment">&lt;!-- a bunch of other stuff --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+              
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token comment">&lt;!-- the page content --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+              
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
           </article>
 
           <aside class="app-sidebar">sidebar</aside>

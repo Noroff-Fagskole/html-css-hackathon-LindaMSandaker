@@ -74,9 +74,54 @@ main img {
   padding: 0.5em;
 }
 
+.app-navigation-drawer {
+  /* hide nav on load */
+  display: block;
+  background-color: #fff;
+  padding: 0.5em;
+  border-bottom: 1px solid green;
+  box-shadow: 0rem 0rem 1rem green;
+  list-style: none;
+  /* animated: default state on page load */
+  transition: all 0.3s linear;
+  transform: translateY(-150%);
+}
+
+.sr-only {
+  display: none;
+}
+
+#hamburger-menu {
+  /* hide the checkbox */
+  display: none;
+}
+
+#hamburger-menu:checked ~ .app-navigation-drawer {
+  /* show nav on :checked */
+  display: block;
+  /* animate into page show state */
+  transform: translateY(0px);
+}
+
+/* CSS Comment */
+@media screen and (min-width: 767px) {
+  .app-article {
+    display: inline-block;
+    border: 1px solid green;
+    width: 60%;
+  }
+
+  .app-sidebar {
+    display: inline-block;
+    border: 1px solid purple;
+    width: 35%;
+    vertical-align: top;
+  }
+}
 /* links have 4 states... 
 a:link, a:visited, a:active, a:hover 
 */
+
 /* this is a comment field for the coders, 
 will not be visible on the web 
 */
