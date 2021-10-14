@@ -16,15 +16,13 @@ body {
 }
 
 /*
-Mobile: 320px 
-Tablet: 767 px 
-Desktop: 1024px
+Mobile: 0 --- 320px --- 767px
+Tablet: 768px --- 1024px 
+Desktop: 1080px --- 1336px --- 1440px --- 1980px
 */
 
 main img {
   width: 100%;
-  max-width: 620px;
-
   margin: 0 auto 0 auto;
   display: block;
 }
@@ -51,10 +49,13 @@ main img {
   float: right;
 }
 
+/* links have 4 states... 
+a:link, a:visited, a:active, a:hover 
+*/
+
 .app-navigation a:link {
   text-decoration: none;
   color: #444;
-  padding: 0.5em;
 }
 
 .app-navigation a:visited {
@@ -71,7 +72,7 @@ main img {
 
 .nav-icon {
   color: #444;
-  padding: 0.5em;
+  padding-right: 0.3em;
 }
 
 .app-navigation-drawer {
@@ -80,7 +81,6 @@ main img {
   background-color: #fff;
   padding: 0.5em;
   border-bottom: 1px solid green;
-  box-shadow: 0rem 0rem 1rem green;
   list-style: none;
   /* animated: default state on page load */
   transition: all 0.3s linear;
@@ -102,29 +102,6 @@ main img {
   /* animate into page show state */
   transform: translateY(0px);
 }
-
-/* CSS Comment */
-@media screen and (min-width: 767px) {
-  .app-article {
-    display: inline-block;
-    border: 1px solid green;
-    width: 60%;
-  }
-
-  .app-sidebar {
-    display: inline-block;
-    border: 1px solid purple;
-    width: 35%;
-    vertical-align: top;
-  }
-}
-/* links have 4 states... 
-a:link, a:visited, a:active, a:hover 
-*/
-
-/* this is a comment field for the coders, 
-will not be visible on the web 
-*/
 
 h1 {
   font-size: 3rem;
@@ -187,6 +164,10 @@ input[type="submit"]:hover {
   background-color: greenyellow;
 }
 
+.language-html {
+  background-color: black;
+}
+
 /*
 textarea {
   border-radius: 6px;
@@ -202,6 +183,62 @@ input[type="tel"] {
 }
 */
 
+.footer {
+  background-color: burlywood;
+}
+
+.footer .column {
+  display: block;
+  width: 100%;
+  border: 1px solid red;
+}
+
+/*
+<i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        
 .footer-icon {
   padding: 0.5em;
 }
+*/
+
+/* Desktop! MUST BE LAST! */
+@media screen and (min-width: 767px) {
+  .app-navigation-drawer {
+    transform: translateY(0);
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .app-navigation-drawer li {
+    display: inline-block;
+  }
+
+  .app-header {
+    overflow: hidden;
+    height: 44px;
+  }
+
+  .app-article {
+    display: inline-block;
+    width: 58%;
+  }
+
+  .app-sidebar {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
+
+  .footer .column {
+    display: inline-block;
+    width: 22%;
+    border: 1px solid red;
+  }
+} /* Desktop stops here */
