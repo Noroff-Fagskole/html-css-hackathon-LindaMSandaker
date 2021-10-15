@@ -238,7 +238,7 @@ input[type="tel"] {
 
   .footer .column {
     display: inline-block;
-    width: 22%;
+    width: 23%;
     border: 1px solid red;
   }
 } /* Desktop stops here */
